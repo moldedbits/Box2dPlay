@@ -44,6 +44,37 @@ public class Box2dPlay implements ApplicationListener {
 
 	private void initWorld() {
 		Box2dUtils.createEdgeShape(world, BodyType.StaticBody, -25, -14, 25, -14, 0);
+		
+		/*Body body1 = Box2dUtils.createBox(world, BodyType.DynamicBody, 5, 4, 1);
+		Vector2[] vertices = {
+			new Vector2(0, 0),
+			new Vector2(5, 0),
+			new Vector2(2.5f, 4)
+		};
+		Body body2 = Box2dUtils.createPolygon(world, BodyType.DynamicBody, vertices, 1);
+		
+		body1.setTransform(-5, 0, 0);
+		body2.setTransform(5, 5, (float) (Math.PI / 4));
+		
+		DistanceJointDef jd = new DistanceJointDef();
+		jd.bodyA = body1;
+		jd.bodyB = body2;
+		jd.collideConnected = true;
+		jd.localAnchorA.set(0f, 0f);
+		jd.localAnchorB.set(2.5f, 2);
+		jd.frequencyHz = 4f;
+		jd.dampingRatio = 0.5f;
+		jd.length = 10;
+		
+		RevoluteJointDef rjd = new RevoluteJointDef();
+		rjd.bodyA = body1;
+		rjd.bodyB = body2;
+		rjd.collideConnected = false;
+		rjd.localAnchorA.set(0f, 0f);
+		rjd.localAnchorB.set(2.5f, 2);*/
+		
+		//world.createJoint(rjd);
+		
 		Body temp;
 
 		float box_height = 1.5f;

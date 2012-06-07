@@ -11,6 +11,6 @@ public class Main {
 		cfg.width = 800;
 		cfg.height = 480;
 		
-		new LwjglApplication(new Box2dPlay(), cfg);
+		new LwjglApplication(new Box2dPlay1(), cfg);
 	}
 }

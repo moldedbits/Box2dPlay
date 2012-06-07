@@ -72,6 +72,7 @@ public class Box2dUtils {
 
 		CircleShape poly = new CircleShape();
 		poly.setRadius(radius);
+		
 		box.createFixture(poly, density);
 		poly.dispose();
 
